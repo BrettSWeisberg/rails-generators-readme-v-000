@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   def create
     binding.pry
     @post = Post.new(params)
-    @post.status = "draft"
+    @post.post_status = "draft"
     @post.save
     redirect_to post_path(@post)
   end
