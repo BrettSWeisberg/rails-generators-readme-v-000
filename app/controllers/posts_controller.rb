@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    binding.pry
     @post = Post.new(params)
     @post.status = "draft"
     @post.save
