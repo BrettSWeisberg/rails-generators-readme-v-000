@@ -10,7 +10,6 @@ class PostsController < ApplicationController
   end
 
   def new
-    binding.pry
   	@post = Post.new
   end
 
