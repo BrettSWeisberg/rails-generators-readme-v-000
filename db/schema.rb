@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180913215434) do
+ActiveRecord::Schema.define(version: 20180913220004) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "name"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 20180913215434) do
     t.datetime "updated_at",       null: false
     t.integer  "category_id"
     t.string   "published_status"
+    t.string   "post_status"
   end
 
 end
